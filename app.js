@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Apple-Style Calculator</title>
-</head>
-<body>
-  <h2>Apple Calculator</h2>
-    <h2>I love you Nicole/h2>
-
-  
-  <input type="text" id="display" readonly>
-
-  <div>
-    <button onclick="press('7')">7</button>
-    <button onclick="press('8')">8</button>
-    <button onclick="press('9')">9</button>
-    <button onclick="setOperator('/')">÷</button>
-  </div>
-  <div>
-    <button onclick="press('4')">4</button>
-    <button onclick="press('5')">5</button>
-    <button onclick="press('6')">6</button>
-    <button onclick="setOperator('*')">×</button>
-  </div>
-  <div>
-    <button onclick="press('1')">1</button>
-    <button onclick="press('2')">2</button>
-    <button onclick="press('3')">3</button>
-    <button onclick="setOperator('-')">−</button>
-  </div>
-  <div>
-    <button onclick="press('0')">0</button>
-    <button onclick="press('.')">.</button>
-    <button onclick="calculate()">=</button>
-    <button onclick="setOperator('+')">+</button>
-  </div>
-  <div>
-    <button onclick="clearDisplay()">C</button>
-    <button onclick="backspace()">⌫</button>
-
-  </div>
-
-  <script>
-    let current = '';
+ let current = '';
     let previous = '';
     let operator = '';
 
@@ -103,6 +60,3 @@
     function updateDisplay(ll ) {
       document.getElementById('display').value = current;
     }
-  </script>
-</body>
-</html>
